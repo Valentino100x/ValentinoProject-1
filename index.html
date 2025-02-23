@@ -5,7 +5,7 @@ Name: Valentino
 Course: Web Development 10S
 Teacher: Ms. Hoitink
 School: Pembina Trails Collegiate (PTC)
-Date Last Modified: 2/18/2025
+Date Last Modified: 2/21/2025
 -->
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@ Date Last Modified: 2/18/2025
         }
         .robloxbar {
             display: flex;
-            justify-content: space-between; /* Space out the content */
+            justify-content: space-between; 
             align-items: center;
             background-color: black;
             padding: 15px;
@@ -40,13 +40,14 @@ Date Last Modified: 2/18/2025
             padding: 0;
             background-color: rgb(42, 42, 42);
             color: white;
-            text-align: center; /* Centers everything inside the body */
+            text-align: center; 
         }
+
         table, th, td {
             border: 1px solid white;
             background-color: rgb(42, 42, 42);
-            margin-left: auto;  /* Centers the table horizontally */
-            margin-right: auto; /* Centers the table horizontally */
+            margin-left: auto;  
+            margin-right: auto; 
             text-align: center;
         }
         th {
@@ -93,6 +94,15 @@ Date Last Modified: 2/18/2025
             padding: 5px;
             margin-bottom: 10px;
         }
+
+        #securitykey {
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            background-color: rgb(11, 54, 161);
+            color: white;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
         .row {
             display: flex;
             box-sizing: border-box;
@@ -107,7 +117,8 @@ Date Last Modified: 2/18/2025
         .column img {
             filter: grayscale(0.7);
             transition: 0.5s ease;
-            height: 300px;
+            height: 280px; 
+            width: 100%; 
         }
         #signupbutton {
             color: white;
@@ -120,123 +131,152 @@ Date Last Modified: 2/18/2025
         }
         #signupbutton:hover {
             background-color: rgb(1, 32, 166);
-            transform: scale(1.1); /* Slightly grow the button on hover */
+            transform: scale(1.1); 
         }
         .column img:hover {
             filter: grayscale(0);
             transition: 0.5s ease;
         }
+        .noborder {
+            border: none;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Top Navbar with image on left and sign up on right -->
-    <div class="robloxbar">
-        <a href="index.html">
-            <img src="https://en.help.roblox.com/hc/theming_assets/01HZPAS6P8C1KHF2TQJ18XHPHE" alt="Roblox logo">
-        </a>
-        <!-- Sign Up Button on the right -->
-        <a href="login.html" id="signupbutton" target="_blank">Sign Up</a>
-    </div>
-
-    <!-- White bar under the logo -->
-    <div class="robloxbarunder"></div>
-
-    <h2>Top Donation Wall</h2>
-    <p>This table shows our most <span style="color: gold"><strong><u>PRESTIGIOUS</u></strong></span> donators, how much they donated, and their ranking for money donated!<br/>We appreciate all of our donations and would love for you to donate today. <a href="#donate" id="donatelink">Donate</a></p>
-
-    <!-- Donation Table -->
-    <table>
-        <tr>
-            <th>Number</th>
-            <th>Name</th>
-            <th>Amount Donated</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td>Pubert Jenkins</td>
-            <td>200 million dollars</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Rick Jenkins</td>
-            <td>199 million dollars</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>BlackRock Company</td>
-            <td>105 million dollars</td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td>Somalian Government</td>
-            <td>95 million dollars</td>
-        </tr>
-        <tr>
-            <td>5.</td>
-            <td>Lashe fadumiye</td>
-            <td>80 million dollars</td>
-        </tr>
-        <tr>
-            <td>6.</td>
-            <td>Daniel Larusso</td>
-            <td>50 million dollars</td>
-        </tr>
-        <tr>
-            <td>7.</td>
-            <td>Obama Obama</td>
-            <td>20 million dollars</td>
-        </tr>
-        <tr>
-            <td>8.</td>
-            <td>Rick Jenkins<sup>2</sup></td>
-            <td>10 million dollars</td>
-        </tr>
-        <tr>
-            <td>9.</td>
-            <td>Rick Jenkins<sub>4</sub></td>
-            <td>7 million dollars</td>
-        </tr>
-        <tr>
-            <td>10.</td>
-            <td>Walter White</td>
-            <td>3 million dollars</td>
-        </tr>
-    </table>
-
-    <!-- Featured Roblox Games Section -->
-    <h2 style="text-align: center;"><span style="color: silver">FEATURED</span> Roblox Games</h2>
-
-    <div class="row">
-        <div class="column">
-            <p></p>
-            <img src="https://media-hosting.imagekit.io//3ae6a78605374b4d/screenshot_1740109567376.png?Expires=1834717568&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=kAK5y4fjmMwt3Rnk6iWH92nOzXEfMvld15y8n88-kLU8w73c4f0MxHQ9aeEMEBNZE76xW5QDz-PtxwJYePUOSt8H8D8Hgyn4DnwVpygraw35u7Y96nyQn6GG7oqwtXZKfansY9dxAQ6oPU9LeWelaEOCU1G8F2eNZi5kIuq2vsP4gX95uNxgdLycbpd3ewuBSsTVSw2FtNSJXB7hrHevPWq2CIgNnCvYnXiavhL7CK1njYGZ3wXClWSkOSkrDj8uCsKCuhuLqEZGsYE0dHtaOBW8fUlB4DsbNMQlL-DAFSNgaCDivm6I6EPZMh3ECXMtHgMOmayOdQsTGrdhy8XU1g__ " alt="Fisch" style="width:100%">
-            <p style="color:white; font-size:20px; margin: 3px;"><strong>Fisch</strong></p>
+    <header>
+        <div class="robloxbar">
+            <a href="index.html">
+                <img src="https://en.help.roblox.com/hc/theming_assets/01HZPAS6P8C1KHF2TQJ18XHPHE" alt="Roblox logo">
+            </a>
+            <!-- Sign Up Button on the right -->
+            <a href="login.html" id="signupbutton" target="_blank">Sign Up</a>
         </div>
 
-        <div class="column">
-            <p></p>
-            <img src="https://media-hosting.imagekit.io//bd0f8555afb34ba8/screenshot_1740109440603.png?Expires=1834717441&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Kr4qkw6lUGi1o3EAEJJDr0PKRALLZTa~rVtw0wY0KhN94c0kGY~LoPkPyOi0BJ~SpRWZ~bnV55WB-HuqXIdIZY1eoRTLXs5iMdC9K0-hjPtT0Qm9eaGFc5yOpITuBae-11MjT2ulki9VJzzsxQHqIZQLB8Fu3BivW0De51P5iahGjii69Bc7yAiFL0qkYzogjr60J2S787ui7N7kmw~cXjvRm-LENU0XIR~ST39jY58024aBTlJJpuMDL7BWtLopWK3ZVxMYrpYUfvajdgRqrD~gq5EubmUK7NeWdPKD90FzKv3kxIgevWkcMjadagKAOqgV6DxOCQY4I2DJ4-zuww" alt="Blox Fruits" style="width:100%">
-            <p style="color:white; font-size:20px; margin: 3px;"><strong>Blox Fruits</strong></p>
-        </div>
+        <!-- White bar under the nav bar -->
+        <div class="robloxbarunder"></div>
+    </header>
 
-        <div class="column">
-            <p></p>
-            <img src="https://media-hosting.imagekit.io//d14dd91cab84455b/screenshot_1740109358061.png?Expires=1834717358&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=IR8vymghFx1Z627bloM-elh0QGWCtQHyacxQ8j6GjNF4EcGCcfOdXWku8qXX1ZaENSPMTl7Sd71GbqEIQh2g13IQxhbYgEDjGyZYPxhRqbjISD4LDUlLTCAk3~OS-hTMdG4peFf9hW0GtEp63I3uthaRqiek63VugdTMFmr~Eip92i2aGI6I8BPEYrXfYfFgh0JCT9orOSr8BQCXmZFYAMRrsAxJYG8y5ioET7v39yUyHUnBOPWikYNgXJuyAF59-k44Spk3VwlBNhEY2~8eaxnoXDf0rxvycTi7smnLtIZUugeGs7iKhHh7eoMpTFD4Ni34poc-Hwsvafm2dSUcPw" alt="Airship Assault" style="width:100%">
-            <p style="color:white; font-size:20px; margin: 3px;"><strong>Airship Assault</strong></p>
-        </div>
-    </div>
+    <main>
+        <section>
+            <h2>Top Donation Wall</h2>
+            <p>This table shows our most <span style="color: gold"><strong><u>PRESTIGIOUS</u></strong></span> donators, how much they donated, and their ranking for money donated!<br/>We appreciate all of our donations and would love for you to donate today. <a href="#donate" id="donatelink">Donate</a></p>
+            <table class="noborder">
+                <tr>
+                    <td class="noborder">
+                        <img src="images/FreeRobux - Copy.png" style="display:inline; padding-right:200px; " alt="Free Robux ad"/>
+                    </td>
+                    <td class="noborder">
+                        <!-- Donation Table -->
+                        <table style="display:inline;">
+                            <tr>
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>Amount Donated</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Pubert Jenkins</td>
+                                <td>200 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Rick Jenkins</td>
+                                <td>199 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>BlackRock Company</td>
+                                <td>105 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Somalian Government</td>
+                                <td>95 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Lashe Fadumiye</td>
+                                <td>80 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Daniel Larusso</td>
+                                <td>50 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>Obama Obama</td>
+                                <td>20 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>Rick Jenkins<sup>2</sup></td>
+                                <td>10 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>Rick Jenkins<sub>4</sub></td>
+                                <td>7 million dollars</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>Walter White</td>
+                                <td>3 million dollars</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="noborder">
+                        <img src="images/RobloxBurgerAd.png" style="display:inline; padding-left: 200px;" alt="Roblox Burger ad"/>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
-    <!-- Donation Form -->
-    <br />
-    <form id="donate">
-        <label for="donationfromuser">Donate, anything is appreciated. <br /> <span style="font-size:10px">&#60 Donations will go to Saudi Oil &#62</span></label><br />
-        <input type="number" id="donationfromuser" name="How much you donated" min="1" required><br />
-        <label for="donatorsfname">First Name:</label>
-        <input type="text" id="donatorsfname" name="First Name" placeholder="Ex:Jamal Jenkins" required><br />
-        <label for="donatorsemail">Email Address:</label>
-        <input type="email" id="donatorsemail" name="Donators Email" placeholder="Ex:Jenkins@gmail.com" required><br />
-        <button>Donate</button>
-    </form>
+        <section>
+            <h2 style="text-align: center;"><span style="color: silver">FEATURED</span> Roblox Games</h2>
+            <div class="row">
+                <div class="column">
+                    <figure>
+                        <img src="https://media-hosting.imagekit.io//3ae6a78605374b4d/screenshot_1740109567376.png?Expires=1834717568&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=kAK5y4fjmMwt3Rnk6iWH92nOzXEfMvld15y8n88-kLU8w73c4f0MxHQ9aeEMEBNZE76xW5QDz-PtxwJYePUOSt8H8D8Hgyn4DnwVpygraw35u7Y96nyQn6GG7oqwtXZKfansY9dxAQ6oPU9LeWelaEOCU1G8F2eNZi5kIuq2vsP4gX95uNxgdLycbpd3ewuBSsTVSw2FtNSJXB7hrHevPWq2CIgNnCvYnXiavhL7CK1njYGZ3wXClWSkOSkrDj8uCsKCuhuLqEZGsYE0dHtaOBW8fUlB4DsbNMQlL-DAFSNgaCDivm6I6EPZMh3ECXMtHgMOmayOdQsTGrdhy8XU1g__" alt="Fisch">
+                        <figcaption style="color:white; font-size:20px; margin: 3px;"><strong>Fisch</strong></figcaption>
+                    </figure>
+                </div>
+
+                <div class="column">
+                    <figure>
+                        <img src="https://media-hosting.imagekit.io//bd0f8555afb34ba8/screenshot_1740109440603.png?Expires=1834717441&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Kr4qkw6lUGi1o3EAEJJDr0PKRALLZTa~rVtw0wY0KhN94c0kGY~LoPkPyOi0BJ~SpRWZ~bnV55WB-HuqXIdIZY1eoRTLXs5iMdC9K0-hjPtT0Qm9eaGFc5yOpITuBae-11MjT2ulki9VJzzsxQHqIZQLB8Fu3BivW0De51P5iahGjii69Bc7yAiFL0qkYzogjr60J2S787ui7N7kmw~cXjvRm-LENU0XIR~ST39jY58024aBTlJJpuMDL7BWtLopWK3ZVxMYrpYUfvajdgRqrD~gq5EubmUK7NeWdPKD90FzKv3kxIgevWkcMjadagKAOqgV6DxOCQY4I2DJ4-zuww" alt="Blox Fruits">
+                        <figcaption style="color:white; font-size:20px; margin: 3px;"><strong>Blox Fruits</strong></figcaption>
+                    </figure>
+                </div>
+
+                <div class="column">
+                    <figure>
+                        <img src="https://media-hosting.imagekit.io//d14dd91cab84455b/screenshot_1740109358061.png?Expires=1834717358&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=IR8vymghFx1Z627bloM-elh0QGWCtQHyacxQ8j6GjNF4EcGCcfOdXWku8qXX1ZaENSPMTl7Sd71GbqEIQh2g13IQxhbYgEDjGyZYPxhRqbjISD4LDUlLTCAk3~OS-hTMdG4peFf9hW0GtEp63I3uthaRqiek63VugdTMFmr~Eip92i2aGI6I8BPEYrXfYfFgh0JCT9orOSr8BQCXmZFYAMRrsAxJYG8y5ioET7v39yUyHUnBOPWikYNgXJuyAF59-k44Spk3VwlBNhEY2~8eaxnoXDf0rxvycTi7smnLtIZUugeGs7iKhHh7eoMpTFD4Ni34poc-Hwsvafm2dSUcPw" alt="Airship Assault">
+                        <figcaption style="color:white; font-size:20px; margin: 3px;"><strong>Airship Assault</strong></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Donation Form -->
+            <form id="donate">
+                <label for="donationfromuser">Donate, anything is appreciated. <br /> <span style="font-size:10px">&#60 Donations will go to Saudi Oil &#62</span></label><br />
+                <input type="number" id="donationfromuser" name="How much you donated" min="1" required><br />
+                <label for="donatorsfname">First Name:</label>
+                <input type="text" id="donatorsfname" name="First Name" placeholder="Ex:Richard" required><br />
+                <label for="donatorsemail">Email Address:</label>
+                <input type="email" id="donatorsemail" name="Donators Email" placeholder="Ex:Jenkins@gmail.com" required><br />
+                <label for="securitykey">Security Key:</label>
+                <input type="password" id="securitykey" name="Security-Key" placeholder="Ex:coolie456" required><br/>
+                <button>Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p style="background-color: rgb(33, 33, 33); padding: 20px;">&copy; 2025 Valentino's Website.</p>
+    </footer>
 </body>
 </html>
